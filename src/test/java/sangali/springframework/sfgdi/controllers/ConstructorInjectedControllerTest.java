@@ -2,7 +2,7 @@ package sangali.springframework.sfgdi.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sangali.springframework.sfgdi.controllers.services.GreetingServiceImpl;
+import sangali.springframework.sfgdi.controllers.services.ConstructorGreetingService;
 
 class ConstructorInjectedControllerTest {
 
@@ -11,7 +11,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController( new GreetingServiceImpl());
+        controller = new ConstructorInjectedController( new ConstructorGreetingService());
 
     }
 
