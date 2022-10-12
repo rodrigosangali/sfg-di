@@ -1,9 +1,14 @@
 package sangali.springframework.sfgdi.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.stereotype.Controller;
 import sangali.springframework.sfgdi.controllers.services.GreetingService;
 
+@Controller
 public class PropertyInjectedController {
 
+    @Autowired
     public GreetingService greetingService;
 
     public String getGreeting() {

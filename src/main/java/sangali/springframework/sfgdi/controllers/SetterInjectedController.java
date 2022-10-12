@@ -1,10 +1,13 @@
 package sangali.springframework.sfgdi.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import sangali.springframework.sfgdi.controllers.services.GreetingService;
 
+@Controller
 public class SetterInjectedController {
 
-
+    @Autowired
     private GreetingService greetingService;
 
     public void setGreetingService(GreetingService greetingService) {
