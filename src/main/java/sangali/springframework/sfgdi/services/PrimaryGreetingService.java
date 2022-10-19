@@ -1,4 +1,4 @@
-package sangali.springframework.sfgdi.controllers.services;
+package sangali.springframework.sfgdi.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

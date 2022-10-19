@@ -1,7 +1,7 @@
 package sangali.springframework.sfgdi.controllers;
 
 import org.springframework.stereotype.Controller;
-import sangali.springframework.sfgdi.controllers.services.GreetingService;
+import sangali.springframework.sfgdi.services.GreetingService;
 
 @Controller
 public class MyController {

@@ -1,4 +1,4 @@
-package sangali.springframework.sfgdi.controllers.services;
+package sangali.springframework.sfgdi.services;
 
 public interface GreetingService {
 

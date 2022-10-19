@@ -2,7 +2,7 @@ package sangali.springframework.sfgdi.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sangali.springframework.sfgdi.controllers.services.ConstructorGreetingService;
+import sangali.springframework.sfgdi.services.ConstructorGreetingService;
 
 class ConstructorInjectedControllerTest {
 
