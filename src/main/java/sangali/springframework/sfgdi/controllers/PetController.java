@@ -1,6 +1,6 @@
 package sangali.springframework.sfgdi.controllers;
 
-import sangali.springframework.sfgdi.services.PetService;
+import sangali.springframework.pets.PetService;
 import org.springframework.stereotype.Controller;
 
 /**
