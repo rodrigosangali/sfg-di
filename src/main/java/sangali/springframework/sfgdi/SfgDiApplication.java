@@ -3,6 +3,7 @@ package sangali.springframework.sfgdi;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import sangali.springframework.sfgdi.config.SfgConstructorConfig;
 import sangali.springframework.sfgdi.controllers.*;
 import sangali.springframework.sfgdi.services.PrototypeBean;
 import sangali.springframework.sfgdi.services.SingletonBean;
@@ -55,6 +56,13 @@ public class SfgDiApplication {
 		System.out.println(prototypeBean1.getMyScope());
 		PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
 		System.out.println(prototypeBean2.getMyScope());
+
+
+		System.out.println(("---------------Constructor Binding"));
+		SfgConstructorConfig sfgConstructorConfig = ctx.getBean(SfgConstructorConfig.class);
+		System.out.println(sfgConstructorConfig.getUsername());
+		System.out.println(sfgConstructorConfig.getPassword());
+		System.out.println(sfgConstructorConfig.getJdbcurl());
 
 
 

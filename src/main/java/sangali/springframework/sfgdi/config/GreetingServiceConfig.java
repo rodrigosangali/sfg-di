@@ -1,5 +1,6 @@
 package sangali.springframework.sfgdi.config;
 
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -10,6 +11,7 @@ import sangali.springframework.sfgdi.repositories.EnglishGreetingRepository;
 import sangali.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import sangali.springframework.sfgdi.services.*;
 
+@EnableConfigurationProperties(SfgConstructorConfig.class)
 @Configuration
 public class GreetingServiceConfig {
 
